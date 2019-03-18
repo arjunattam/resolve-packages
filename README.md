@@ -22,6 +22,8 @@ To download [most depended upon packages](https://www.npmjs.com/browse/depended)
 pipenv run python resolve_npm.py
 ```
 
+To run with GitHub PAT, set a environment variable `GITHUB_TOKEN` with the PAT, and then run the same script.
+
 ## Output
 
 Example output on most depended upon packages (32/36 resolved):

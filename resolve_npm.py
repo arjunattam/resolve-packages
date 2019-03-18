@@ -3,6 +3,7 @@
 # To run on request package (version 2.88.0)
 # python resolve_npm.py request 2.88.0
 
+import os
 import re
 import sys
 import bs4
@@ -27,20 +28,28 @@ def get_repo_url(package_name):
         return package_info['links']['repository']
 
 
+def _github_headers():
+    token = os.environ.get('GITHUB_TOKEN')
+
+    if token:
+        return {'Authorization': f'token {token}'}
+
+
 def get_github_tag(repo_url, version):
     """Finds github release for a version on repo_url
        https://developer.github.com/v3/repos/#list-tags"""
     pattern = re.compile('github\.com/(.+)/(.+)')
     match = re.search(pattern, repo_url)
     owner, repo = match.groups()
-    r = requests.get(f'https://api.github.com/repos/{owner}/{repo}/tags',
-                     headers={'Authorization': 'token 1296391a8718d85f7b515703b69189412342405f'})
-    repo_tags = r.json()
-    filtered = list(filter(lambda x: x['name'] == version or x['name'] == f'v{version}',
-                           repo_tags))
+    r = requests.get(f'https://api.github.com/repos/{owner}/{repo}/tags', headers=_github_headers())
 
-    if filtered:
-        return filtered[0]
+    if r.status_code == 200:
+        repo_tags = r.json()
+        filtered = list(filter(lambda x: x['name'] == version or x['name'] == f'v{version}',
+                               repo_tags))
+        return filtered[0] if filtered else None
+    else:
+        print(f'github api error: {r.status_code}')
 
 
 def get_resolved_commit(repo_url, version):
