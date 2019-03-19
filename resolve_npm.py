@@ -81,7 +81,7 @@ def resolve_package_to_commit(name, version):
         if commit:
             print(f'{name}: {version} resolved to {commit}')
         else:
-            print(f'{name}: found repo, cannot resolve to commit')
+            print(f'{name}: found repo, cannot resolve {version} to commit')
     else:
         print(f'{name}: repository url not resolved')
 
