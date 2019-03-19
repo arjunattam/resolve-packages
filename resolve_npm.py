@@ -24,8 +24,11 @@ def get_repo_url(package_name):
     """Finds repo url from package.json on npm"""
     package_info = get_package_info(package_name)
 
-    if package_info:
-        return package_info['links']['repository']
+    if package_info and package_info.get('links'):
+        links = package_info['links']
+
+        if links.get('repository'):
+            return links['repository']
 
 
 def _github_headers():
@@ -63,10 +66,11 @@ def _parse_section(section):
     return {'name': name, 'version': latest_version}
 
 
-def get_most_depended_upon_npm_packages():
+def get_most_depended_upon_npm_packages(page):
     """Fetches package and version from npmjs.com. Since there is no
     API to fetch this, we scrape it off the page (not ideal, yes)."""
-    r = requests.get('https://www.npmjs.com/browse/depended')
+    offset = (page - 1) * 36 # page length is 36
+    r = requests.get(f'https://www.npmjs.com/browse/depended?offset={offset}')
     soup = bs4.BeautifulSoup(r.content, 'html.parser')
     sections = soup.find_all('section')
     return list(map(_parse_section, sections))
@@ -93,7 +97,7 @@ if __name__ == '__main__':
         package_name, version = sys.argv[1], sys.argv[2]
         packages = [{'name': package_name, 'version': version}]
     else:
-        packages = get_most_depended_upon_npm_packages()
+        packages = get_most_depended_upon_npm_packages(1)
     
     for package in packages:
         resolve_package_to_commit(**package)
