@@ -107,3 +107,9 @@ mongodb: 3.1.13 resolved to c6f417e5fe54691783bccc466e7703a5d380739e
 @angular/forms: 7.2.9 resolved to 5abb9360d822ad98a7905d11ff89e42e80050c6a
 @angular/platform-browser-dynamic: 7.2.9 resolved to 5abb9360d822ad98a7905d11ff89e42e80050c6a
 ```
+
+## Known issues
+
+1. Resolution to _a_ commit sha does not necessarily imply that it is the _correct_ commit sha. While this seems to be valid in most cases, `lodash` is an exception: the package published to npm is tagged as `{version}-npm`, which is different from the `{version}` (which we resolve to).
+2. Currently, we match version `A.B.C` with potential tag names: `A.B.C`, `vA.B.C`. The `inquirer` package uses `inquirer@A.B.C` tag naming convention.
+3. The tags API call on GitHub only looks at the first page right now, and this fails on the `babel-*@6.x` packages.
