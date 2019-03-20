@@ -112,7 +112,7 @@ mongodb: 3.1.13 resolved to c6f417e5fe54691783bccc466e7703a5d380739e
 @angular/platform-browser-dynamic: 7.2.9 resolved to 5abb9360d822ad98a7905d11ff89e42e80050c6a
 ```
 
-NuGet top 100 (49/100 resolved):
+NuGet top 100 (65/100 resolved):
 
 ```
 newtonsoft.json: 12.0.1 resolved to 509643a8
