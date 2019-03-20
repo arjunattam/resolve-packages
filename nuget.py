@@ -23,10 +23,16 @@ def get_most_downloaded_nuget_packages():
 
 
 def get_version(name):
-    r = requests.get(f'https://api.nuget.org/v3-flatcontainer/{name}/index.json')
-    response = r.json()
-    versions = response['versions']
-    return versions[-1] # return latest
+    """Earlier version of this method used the versions API, but that was not working
+    properly for packages that have many releases.
+    
+    API: https://api.nuget.org/v3-flatcontainer/{name}/index.json"""
+    r = requests.get(f'https://www.nuget.org/packages/{name}/')
+    soup = bs4.BeautifulSoup(r.content, 'html.parser')
+    version_tr = soup.find('tr', {'class': 'bg-info'})
+    version_td = version_tr.contents[3]
+    version_link = version_td.contents[1]
+    return version_link.contents[0].strip()
 
 
 def _is_github_url(url):

@@ -125,73 +125,73 @@ xunit.assert: 2.4.1 resolved to c54cc52f
 xunit.extensibility.execution: 2.4.1 resolved to c54cc52f
 xunit.core: 2.4.1 resolved to c54cc52f
 xunit: 2.4.1 resolved to c54cc52f
-microsoft.entityframeworkcore.abstractions: 3.0.0-preview3.19153.1 resolved to 8f9c2cf5
-microsoft.entityframeworkcore.analyzers: 3.0.0-preview3.19153.1 resolved to 8f9c2cf5
+microsoft.entityframeworkcore.abstractions: found repo, cannot resolve 2.2.3 to commit
+microsoft.entityframeworkcore.analyzers: found repo, cannot resolve 2.2.3 to commit
 automapper: 8.0.0 resolved to af60a492
 xunit.runner.visualstudio: 2.4.1 resolved to c54cc52f
 nunit: found repo, cannot resolve 3.11.0 to commit
 xunit.analyzers: found repo, cannot resolve 0.10.0 to commit
 awssdk.core: found repo, cannot resolve 3.3.32.2 to commit
-swashbuckle.aspnetcore.swagger: 5.0.0-beta resolved to 99f2577e
-swashbuckle.aspnetcore.swaggergen: 5.0.0-beta resolved to 99f2577e
+swashbuckle.aspnetcore.swagger: 4.0.1 resolved to 28e8673e
+swashbuckle.aspnetcore.swaggergen: 4.0.1 resolved to 28e8673e
 jquery: could not resolve to url or version
 autofac: 4.9.1 resolved to 831973f4
-swashbuckle.aspnetcore.swaggerui: 5.0.0-beta resolved to 99f2577e
-nlog: found repo, cannot resolve 5.0.0-beta11 to commit
+swashbuckle.aspnetcore.swaggerui: 4.0.1 resolved to 28e8673e
+nlog: 4.5.11 resolved to 5d14e566
 fluentassertions: 5.6.0 resolved to 6cf1d347
-swashbuckle.aspnetcore: 5.0.0-beta resolved to 99f2577e
-microsoft.aspnetcore.connections.abstractions: found repo, cannot resolve 3.0.0-preview3-19153-02 to commit
+swashbuckle.aspnetcore: 4.0.1 resolved to 28e8673e
+microsoft.aspnetcore.connections.abstractions: 2.2.0 resolved to 5db63947
 log4net: could not resolve to url or version
 dapper: 1.60.1 resolved to b520e26a
 restsharp: found repo, cannot resolve 106.6.9 to commit
-system.interactive.async: found repo, cannot resolve 4.0.0-preview.1.build.745 to commit
+system.interactive.async: found repo, cannot resolve 3.2.0 to commit
 antlr: 3.5.0.2 resolved to dd3bb201
 owin: found repo, cannot resolve 1.0.0 to commit
 polly: found repo, cannot resolve 7.1.0 to commit
-serilog.extensions.logging: found repo, cannot resolve 2.1.0-dev-10193 to commit
-identitymodel: found repo, cannot resolve 4.0.0-cragganmore to commit
+serilog.extensions.logging: found repo, cannot resolve 2.0.2 to commit
+identitymodel: 3.10.6 resolved to 653d4b09
 nunit3testadapter: found repo, cannot resolve 3.13.0 to commit
 serilog.sinks.file: could not resolve to url or version
 remotion.linq: could not resolve to url or version
-serilog.sinks.console: found repo, cannot resolve 3.1.2-dev-00792 to commit
+serilog.sinks.console: 3.1.1 resolved to e43ff813
 microsoft.identitymodel.jsonwebtokens: 5.4.0 resolved to 4d5d77d9
 bootstrap: could not resolve to url or version
 fluentvalidation: could not resolve to url or version
-microsoft.aspnetcore.http.connections.common: found repo, cannot resolve 3.0.0-preview3-19153-02 to commit
-microsoft.aspnetcore.signalr.protocols.json: found repo, cannot resolve 3.0.0-preview-18579-0056 to commit
+microsoft.aspnetcore.http.connections.common: 1.1.0 resolved to a9def470
+microsoft.aspnetcore.signalr.protocols.json: 1.1.0 resolved to a9def470
 webactivatorex: found repo, cannot resolve 2.2.0 to commit
 stackexchange.redis: found repo, cannot resolve 2.0.571 to commit
 microsoft.aspnetcore.http.connections: 1.1.0 resolved to a9def470
 modernizr: could not resolve to url or version
-microsoft.aspnetcore.identity.ui: found repo, cannot resolve 3.0.0-preview3-19153-02 to commit
+microsoft.aspnetcore.identity.ui: 2.2.0 resolved to 99f352a9
 jquery.validation: could not resolve to url or version
 awssdk.s3: found repo, cannot resolve 3.3.31.24 to commit
-microsoft.aspnetcore.mvc.analyzers: found repo, cannot resolve 3.0.0-preview3-19153-02 to commit
+microsoft.aspnetcore.mvc.analyzers: 2.2.0 resolved to a6199bbf
 npgsql: 4.0.5 resolved to 12f62263
 unity: found repo, cannot resolve 5.10.1 to commit
 commonservicelocator: found repo, cannot resolve 2.0.4 to commit
 sqlitepclraw.core: 1.1.13 resolved to 5895fe88
 rabbitmq.client: could not resolve to url or version
 htmlagilitypack: 1.11.0 resolved to d2e75820
-stackexchange.redis.strongname: found repo, cannot resolve 1.2.7-alpha-00002 to commit
-microsoft.aspnetcore.app: 3.0.0-preview3-19153-02 resolved to 1f050242
+stackexchange.redis.strongname: 1.2.6 resolved to 90236efc
+microsoft.aspnetcore.app: 2.2.3 resolved to fbe49b39
 sqlitepclraw.bundle_green: 1.1.13 resolved to 5895fe88
 elasticsearch.net: 6.5.1 resolved to caf150d3
 sqlitepclraw.lib.e_sqlite3.v110_xp: 1.1.13 resolved to 5895fe88
 sqlitepclraw.lib.e_sqlite3.osx: 1.1.13 resolved to 5895fe88
-serilog.aspnetcore: found repo, cannot resolve 2.1.2-dev-00028 to commit
+serilog.aspnetcore: 2.1.1 resolved to 5fb585de
 sqlitepclraw.lib.e_sqlite3.linux: 1.1.13 resolved to 5895fe88
-serilog.sinks.periodicbatching: found repo, cannot resolve 2.2.0-dev-00740 to commit
-microsoft.extensions.hosting: found repo, cannot resolve 3.0.0-preview3.19153.1 to commit
+serilog.sinks.periodicbatching: 2.1.1 resolved to 16c50371
+microsoft.extensions.hosting: 2.2.0 resolved to 0724e6cd
 csvhelper: 12.1.2 resolved to 89edc486
-serilog.settings.configuration: found repo, cannot resolve 3.0.2-dev-00187 to commit
+serilog.settings.configuration: 3.0.1 resolved to 008a61e3
 nsubstitute: could not resolve to url or version
 serilog.sinks.rollingfile: could not resolve to url or version
 documentformat.openxml: 2.9.1 resolved to 2157ec80
 selenium.webdriver: could not resolve to url or version
 mongodb.bson: could not resolve to url or version
 google.protobuf: 3.7.0 resolved to 582743bf
-stylecop.analyzers: 1.1.1-rc.114 resolved to 12049117
+stylecop.analyzers: 1.0.2 resolved to 21559d87
 sharpziplib: 1.1.0 resolved to 45347c34
 autofixture: 4.8.0 resolved to 98c5a270
 mongodb.driver.core: could not resolve to url or version
@@ -202,19 +202,19 @@ respond: 1.4.2 resolved to 20b7f4a1
 automapper.extensions.microsoft.dependencyinjection: 6.0.0 resolved to 1a346cdc
 microsoft.aspnetcore.hostfiltering: 2.2.0 resolved to 2d3ad1cb
 system.net.websockets.websocketprotocol: could not resolve to url or version
-microsoft.extensions.http: found repo, cannot resolve 3.0.0-preview3.19153.1 to commit
+microsoft.extensions.http: 2.2.0 resolved to 6619149a
 google.apis.core: 1.38.0 resolved to a696b98a
 newtonsoft.json.bson: 1.0.2 resolved to a1db9267
 google.apis: 1.38.0 resolved to a696b98a
 google.apis.auth: 1.38.0 resolved to a696b98a
-nodatime: 3.0.0-alpha01 resolved to 19394813
+nodatime: 2.4.4 resolved to a3ce3a01
 selenium.support: could not resolve to url or version
 autofac.extensions.dependencyinjection: 4.4.0 resolved to de6c51b5
-dotnet-xunit: found repo, cannot resolve 2.4.0-beta.1.build3958 to commit
-protobuf-net: found repo, cannot resolve 3.0.0-alpha.3 to commit
+dotnet-xunit: 2.3.1 resolved to 8b319328
+protobuf-net: 2.4.0 resolved to 1b5b6570
 hangfire.core: could not resolve to url or version
 portable.bouncycastle: found repo, cannot resolve 1.8.5 to commit
-swashbuckle: found repo, cannot resolve 6.0.0-rc1-final to commit
+swashbuckle: 5.6.0 resolved to 0996fa33
 ```
 
 ## Known issues
@@ -234,3 +234,4 @@ General assumptions
 
 1. Some repository urls have `.git`, need to remove that
 2. Semver equality is breaking. For instance, NUnit has 3.11.0 on Nuget, but on GitHub it is 3.11.
+3. We are not fetching the latest version for all packages. To repro, run on one of the AWS SDK packages
